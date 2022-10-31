@@ -10,6 +10,17 @@ pipeline {
                 }
             }
         }
+      
+      
+      
+         stage('Cleaning the cache ') {
+             steps{
+                script{
+                    sh "sudo npm cache clean --force"
+                }
+            }
+        }
+      
         stage('Install') {
              steps{
                 script{
