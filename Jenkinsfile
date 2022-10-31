@@ -6,7 +6,7 @@ pipeline {
                 script{
                     checkout([$class: 'GitSCM', branches: [[name: '*/master']],
                         userRemoteConfigs: [[
-                            url: 'https://github.com/aminegongi/cd_lab1']]])
+                            url: 'https://github.com/hazem-soussi/livraison-continue']]])
                 }
             }
         }
