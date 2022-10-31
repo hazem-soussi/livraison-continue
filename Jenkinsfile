@@ -4,7 +4,7 @@ pipeline {
         stage('Pull') {
              steps{
                 script{
-                    checkout([$class: 'GitSCM', branches: [[name: '*/master']],
+                    checkout([$class: 'GitSCM', branches: [[name: '*/main']],
                         userRemoteConfigs: [[
                             url: 'https://github.com/hazem-soussi/livraison-continue']]])
                 }
