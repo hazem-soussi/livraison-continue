@@ -2,13 +2,13 @@
 # tasks file for docker-registry
 - name: Log into DockerHub
   docker_login:
-    username: aminegongi
-    password: 271998271998
-    email: amine.gongi@esprit.tn
+    username: hazem1998
+    password: 08021998hazem
+    email: hazem.soussi@esprit.tn
 - name: Push to docker hub
   docker_image:
-    name: aminegongi/cd_lab
-    repository: aminegongi/cd_lab
+    name: hazem1998/livraison
+    repository: hazem1998/livraison
     tag: latest
     source: local
     push: yes
