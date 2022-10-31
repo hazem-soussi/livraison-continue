@@ -2,9 +2,9 @@
 # tasks file for docker
 - name: create image docker
   docker_image:
-    name: aminegongi/cd_lab
+    name: hazem1998/livraison
     build:
-     path: /var/lib/jenkins/workspace/lab1
+     path: /var/lib/jenkins/workspace/livraison_continue
      pull: no
     source: build
     state: present
@@ -12,7 +12,7 @@
 - name: run container docker
   docker_container:
     name: ag_myapp_container
-    image: aminegongi/cd_lab:latest
+    image: hazem1998/livraison:latest
     state: started
     recreate: true
     ports:
