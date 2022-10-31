@@ -5,4 +5,4 @@ localhost
 
 [Server:vars]
 ansible_python_interpreter= /usr/bin/python
-ansible_user=amineg
+ansible_user=hazem
